@@ -1,0 +1,42 @@
+{
+  "urls_file": "/data/urls.txt",
+  "screenshots_dir": "/data/screenshots",
+  "trainer_dir": "/data/trainer_screenshots",
+  "diff_dir": "/data/diff",
+  "ssim_threshold": 0.92,
+  "execution": {
+    "ok": true,
+    "returncode": 0,
+    "stdout": "[INFO] Loading: https://www.jkagidesigns.com/\n[OK] Saved: /data/screenshots/www.jkagidesigns.com.png\n[INFO] Loading: https://www.cultivatronics.com/\n[OK] Saved: /data/screenshots/www.cultivatronics.com.png\n[INFO] Loading: https://www.martints.com/\n[OK] Saved: /data/screenshots/www.martints.com.png\n",
+    "stderr": ""
+  },
+  "totals": {
+    "ok": 0,
+    "warn": 0,
+    "fail": 3,
+    "no_trainer": 0
+  },
+  "items": [
+    {
+      "url": "https://www.jkagidesigns.com/",
+      "status": "fail",
+      "reason": "Comparison error: Since image dtype is floating point, you must specify the data_range parameter. Please read the documentation carefully (including the note). It is recommended that you always specify the data_range anyway.",
+      "current": "/data/screenshots/www.jkagidesigns.com.png",
+      "trainer": "/data/trainer_screenshots/www.jkagidesigns.com.png"
+    },
+    {
+      "url": "https://www.cultivatronics.com/",
+      "status": "fail",
+      "reason": "Comparison error: Since image dtype is floating point, you must specify the data_range parameter. Please read the documentation carefully (including the note). It is recommended that you always specify the data_range anyway.",
+      "current": "/data/screenshots/www.cultivatronics.com.png",
+      "trainer": "/data/trainer_screenshots/www.cultivatronics.com.png"
+    },
+    {
+      "url": "https://www.martints.com/",
+      "status": "fail",
+      "reason": "Comparison error: Since image dtype is floating point, you must specify the data_range parameter. Please read the documentation carefully (including the note). It is recommended that you always specify the data_range anyway.",
+      "current": "/data/screenshots/www.martints.com.png",
+      "trainer": "/data/trainer_screenshots/www.martints.com.png"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  screenshot-runner:
+    build:
+      context: ./screenshot-runner
+      dockerfile: Dockerfile
+    container_name: screenshot-runner
+    environment:
+      - TZ=America/New_York
+    volumes:
+      - ./data:/data   # host-visible: contains urls.txt and screenshots/
+    ports:
+      - "8000:8000"    # FastAPI endpoint for manual triggering if desired

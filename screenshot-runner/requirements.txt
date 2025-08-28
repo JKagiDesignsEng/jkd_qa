@@ -1,0 +1,9 @@
+selenium==4.35.0
+pytest==8.4.1
+pytest-rerunfailures==15.1
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pillow==10.4.0
+numpy==2.1.0
+scikit-image==0.24.0
+

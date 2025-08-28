@@ -1,0 +1,54 @@
+{
+  "urls_file": "/data/urls.txt",
+  "screenshots_dir": "/data/screenshots",
+  "trainer_dir": "/data/trainer_screenshots",
+  "diff_dir": "/data/diff",
+  "ssim_threshold": 0.92,
+  "execution": {
+    "ok": true,
+    "returncode": 0,
+    "stdout": "[INFO] Loading: https://www.jkagidesigns.com/\n[OK] Saved: /data/screenshots/www.jkagidesigns.com.png\n[INFO] Loading: https://www.cultivatronics.com/\n[OK] Saved: /data/screenshots/www.cultivatronics.com.png\n[INFO] Loading: https://www.martints.com/\n[OK] Saved: /data/screenshots/www.martints.com.png\n",
+    "stderr": ""
+  },
+  "totals": {
+    "ok": 2,
+    "warn": 0,
+    "fail": 1,
+    "no_trainer": 0
+  },
+  "items": [
+    {
+      "url": "https://www.jkagidesigns.com/",
+      "status": "ok",
+      "metrics": {
+        "ssim": 0.9991107918282531,
+        "mse": 0.27995914220809937
+      },
+      "current": "/data/screenshots/www.jkagidesigns.com.png",
+      "trainer": "/data/trainer_screenshots/www.jkagidesigns.com.png",
+      "diff": null
+    },
+    {
+      "url": "https://www.cultivatronics.com/",
+      "status": "ok",
+      "metrics": {
+        "ssim": 1.0,
+        "mse": 0.0
+      },
+      "current": "/data/screenshots/www.cultivatronics.com.png",
+      "trainer": "/data/trainer_screenshots/www.cultivatronics.com.png",
+      "diff": null
+    },
+    {
+      "url": "https://www.martints.com/",
+      "status": "fail",
+      "metrics": {
+        "ssim": 0.8689732863369051,
+        "mse": 662.4818725585938
+      },
+      "current": "/data/screenshots/www.martints.com.png",
+      "trainer": "/data/trainer_screenshots/www.martints.com.png",
+      "diff": "/data/diff/diff_www.martints.com.png"
+    }
+  ]
+}
